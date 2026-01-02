@@ -1,0 +1,62 @@
+export function Footer() {
+  return (
+    <footer className="bg-secondary text-secondary-foreground py-12">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="text-2xl font-bold mb-4">
+                <span className="text-white">Speak</span>
+                <span className="text-primary">Today</span>
+              </div>
+              <p className="text-secondary-foreground/80 text-sm leading-relaxed">
+                Tu academia de inglés online de confianza. Aprende con profesores nativos desde la comodidad de tu
+                hogar.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Enlaces Rápidos</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#home" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="#method" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                    Método
+                  </a>
+                </li>
+                <li>
+                  <a href="#pricing" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                    Precios
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Contacto</h3>
+              <ul className="space-y-2 text-sm text-secondary-foreground/80">
+                <li>Email: info@speaktoday.com</li>
+                <li>WhatsApp: +54 9 11 1234-5678</li>
+                <li>Lunes a Viernes: 9:00 - 20:00</li>
+                <li>Sábados: 10:00 - 14:00</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/60">
+            <p>© {new Date().getFullYear()} SpeakToday. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
