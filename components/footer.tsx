@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
@@ -5,9 +7,8 @@ export function Footer() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="text-2xl font-bold mb-4">
-                <span className="text-white">Speak</span>
-                <span className="text-primary">Today</span>
+              <div className="relative h-10 w-40 mb-4">
+                <Image src="/logo.png" alt="SpeakToday Logo" fill className="object-contain object-left" />
               </div>
               <p className="text-secondary-foreground/80 text-sm leading-relaxed">
                 Tu academia de inglés online de confianza. Aprende con profesores nativos desde la comodidad de tu

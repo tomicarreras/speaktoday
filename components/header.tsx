@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,9 +20,8 @@ export function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold">
-            <span className="text-secondary">Speak</span>
-            <span className="text-primary">Today</span>
+          <div className="relative h-10 w-40">
+            <Image src="/logo.png" alt="SpeakToday Logo" fill className="object-contain object-left" priority />
           </div>
 
           {/* Desktop Navigation */}
