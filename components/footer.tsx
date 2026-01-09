@@ -23,7 +23,7 @@ export function Footer() {
                   className="inline-flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
                 >
                   <Instagram className="h-5 w-5" />
-                  <span>@speaktoday</span>
+                  <span>@speaktoday.english</span>
                 </a>
               </div>
             </div>
@@ -34,6 +34,11 @@ export function Footer() {
                 <li>
                   <a href="#home" className="text-secondary-foreground/80 hover:text-primary transition-colors">
                     Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="#talleres" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                    Cursos
                   </a>
                 </li>
                 <li>
