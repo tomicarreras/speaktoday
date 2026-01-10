@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { WelcomeVideo } from "@/components/welcome-video"
 import { WorkshopsSection } from "@/components/workshops-section"
+import { WelcomeVideo } from "@/components/welcome-video"
 import { MethodSection } from "@/components/method-section"
 import { PricingSection } from "@/components/pricing-section"
 import { EnrollmentForm } from "@/components/enrollment-form"
@@ -13,8 +13,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroSection />
-      <WelcomeVideo />
       <WorkshopsSection />
+      <WelcomeVideo />
       <MethodSection />
       <PricingSection />
       <EnrollmentForm />

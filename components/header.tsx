@@ -44,7 +44,13 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="relative h-10 w-40">
-            <Image src="/logo.png" alt="SpeakToday Logo" fill className="object-contain object-left" priority />
+            <Image
+              src={isDark ? "/logo-footer.png" : "/logo.png"}
+              alt="SpeakToday Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </div>
 
           {/* Desktop Navigation */}

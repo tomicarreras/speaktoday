@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -8,12 +9,21 @@ export function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="relative h-10 w-40 mb-4">
-                <Image src="/logo.png" alt="SpeakToday Logo" fill className="object-contain object-left" />
+                <Image src="/logo-footer.png" alt="SpeakToday Logo" fill className="object-contain object-left" />
               </div>
-              <p className="text-secondary-foreground/80 text-sm leading-relaxed">
+              <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-4">
                 Tu academia de inglés online de confianza. Aprende con profesores nativos desde la comodidad de tu
                 hogar.
               </p>
+              <a
+                href="https://instagram.com/speaktoday"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
+              >
+                <Instagram className="w-5 h-5" />
+                @speaktoday
+              </a>
             </div>
 
             <div>
