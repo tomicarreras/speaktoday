@@ -17,7 +17,7 @@ export function Footer() {
               </p>
               <div className="mt-4">
                 <a
-                  href="https://instagram.com/speaktoday"
+                  href="https://instagram.com/speaktoday.english"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
@@ -37,7 +37,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#talleres" className="text-secondary-foreground/80 hover:text-primary transition-colors">
+                  <a href="#workshops" className="text-secondary-foreground/80 hover:text-primary transition-colors">
                     Cursos
                   </a>
                 </li>
