@@ -1,12 +1,31 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
-import { useState } from "react"
+import { Menu, Moon, Sun } from "lucide-react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDark, setIsDark] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const root = document.documentElement
+    if (isDark) {
+      root.classList.add("dark")
+    } else {
+      root.classList.remove("dark")
+    }
+  }, [isDark])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -17,7 +36,11 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+    <header
+      className={`fixed top-0 w-full border-b border-border z-50 transition-all duration-300 ${
+        isScrolled ? "bg-background/70 backdrop-blur-md shadow-lg" : "bg-background/95 backdrop-blur-sm"
+      }`}
+    >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="relative h-10 w-40">
@@ -56,13 +79,29 @@ export function Header() {
             >
               FAQ
             </button>
+            <button
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 rounded-lg hover:bg-muted transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
             <Button onClick={() => scrollToSection("enroll")}>Inscribirse</Button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-            <Menu className="w-6 h-6" />
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 rounded-lg hover:bg-muted transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

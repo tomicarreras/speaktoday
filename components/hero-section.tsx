@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
-            Aprende Inglés a tu ritmo, <span className="text-primary">desde cualquier lugar</span>
+            Aprende Inglés a Tu Ritmo, <span className="text-primary">Desde Cualquier Lugar</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">
             Clases grupales de inglés online con profesores certificados. Mejora tu fluidez, pronunciación y confianza
