@@ -21,8 +21,8 @@ export function HeroSection() {
         {/* Texto */}
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
-            Aprende Inglés a Tu Ritmo,{" "}
-            <span className="text-primary">Desde Cualquier Lugar</span>
+            Aprende Inglés a tu ritmo,{" "}
+            <span className="text-primary">desde cualquier lugar</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">

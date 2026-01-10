@@ -12,7 +12,7 @@ export function Footer() {
                 <Image src="/logo-footer.png" alt="SpeakToday Logo" fill className="object-contain object-left" />
               </div>
               <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-4">
-                Tu academia de inglés online de confianza. Aprende con profesores nativos desde la comodidad de tu
+                Tu academia de inglés online de confianza. Aprende con profesores certificados desde la comodidad de tu
                 hogar.
               </p>
               <a

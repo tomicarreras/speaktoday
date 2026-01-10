@@ -55,7 +55,7 @@ export function FaqSection() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
-              Preguntas <span className="text-primary">Frecuentes</span>
+              Preguntas <span className="text-primary">frecuentes</span>
             </h2>
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
               Respuestas a las dudas más comunes sobre nuestras clases

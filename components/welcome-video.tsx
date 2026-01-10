@@ -7,13 +7,13 @@ export function WelcomeVideo() {
     <section className="py-16 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Conoce a Tu Profesor</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">¡Bienvenid@ a SpeakToday!</h2>
           <p className="text-muted-foreground mb-8 text-pretty leading-relaxed">
             Un mensaje de bienvenida de nuestro equipo
           </p>
 
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-card border-2 border-border">
-            <video controls className="w-full h-full object-cover" poster="/video-thumbnail.jpg">
+            <video controls className="w-full h-full object-cover" poster="videos/video-thumbnail.jpg">
               <source src="/videos/welcome.mp4" type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
             </video>

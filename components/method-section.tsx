@@ -7,7 +7,7 @@ export function MethodSection() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
-              Nuestro <span className="text-primary">Método</span>
+              Nuestro <span className="text-primary">método</span>
             </h2>
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
               Un enfoque conversacional que te ayuda a hablar inglés con confianza desde el primer día

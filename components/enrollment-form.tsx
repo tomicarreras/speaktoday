@@ -147,7 +147,7 @@ Mensaje: ${formData.message}
               </div>
 
               <Button type="submit" className="w-full" size="lg">
-                Enviar Solicitud
+                Enviar solicitud
               </Button>
 
               <p className="text-xs text-muted-foreground text-center leading-relaxed">
