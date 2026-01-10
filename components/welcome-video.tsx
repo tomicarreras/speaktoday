@@ -13,7 +13,7 @@ export function WelcomeVideo() {
           </p>
 
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-card border-2 border-border">
-            <video controls className="w-full h-full object-cover" poster="/video-thumbnail.jpg">
+            <video controls className="w-full h-full object-cover" poster="/videos/video-thumbnail.jpg">
               <source src="/videos/welcome.mp4" type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
             </video>
