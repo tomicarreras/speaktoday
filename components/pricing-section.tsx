@@ -73,7 +73,7 @@ export function PricingSection() {
               Planes y <span className="text-primary">Precios</span>
             </h2>
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
-              Elige el paquete que mejor se adapte a tus necesidades y presupuesto. Precios claros sin sorpresas.
+              Elige el paquete que mejor se adapte a tus necesidades y presupuesto. Precios claros sin sorpresas en el futuro.
             </p>
           </div>
 
