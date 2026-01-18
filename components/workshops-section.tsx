@@ -26,7 +26,7 @@ export function WorkshopsSection() {
         "Vocabulario y expresiones esenciales para viajar: aeropuertos, hoteles, restaurantes, emergencias y conversaciones con locales.",
       color: "bg-green-500/10 text-green-600",
       available: false,
-      startDate: null,
+      startDate: "Proximamente",
     },
     {
       icon: Briefcase,
