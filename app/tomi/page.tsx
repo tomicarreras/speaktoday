@@ -87,7 +87,7 @@ export default function TomiProfile() {
     className="flex items-center justify-center gap-2"
   >
     <img
-      src="/public/discord.svg"
+      src="/images/discord.svg"
       alt="Discord"
       className="w-5 h-5"
     />
