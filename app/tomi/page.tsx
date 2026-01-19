@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Instagram, Github } from 'lucide-react'
+import { Mail, Instagram, Github, MessageCircle, MessageSquare } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
@@ -11,7 +11,8 @@ export default function TomiProfile() {
       <div className="w-full max-w-md">
         <Card className="p-8 shadow-lg">
           <div className="flex flex-col items-center space-y-6">
-            {/* Foto de perfil en círculo */}
+            
+            {/* Foto */}
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
               <img
                 src="/images/tomi-profile.jpg"
@@ -26,38 +27,44 @@ export default function TomiProfile() {
               <p className="text-sm text-gray-500 mt-1">Prof. de Inglés</p>
             </div>
 
-            {/* Email */}
-            <div className="text-center">
-              <a
-                href="mailto:tomi@speaktoday.com.ar"
-                className="text-indigo-600 hover:text-indigo-700 font-medium text-sm"
-              >
-                tomi@speaktoday.com.ar
-              </a>
-            </div>
+            {/* Email texto */}
+            <a
+              href="mailto:tomi@speaktoday.com.ar"
+              className="text-indigo-600 hover:text-indigo-700 font-medium text-sm"
+            >
+              tomi@speaktoday.com.ar
+            </a>
 
-            {/* Separador */}
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-indigo-600 rounded-full"></div>
 
-            {/* Botones de contacto y redes */}
+            {/* Botones */}
             <div className="space-y-3 w-full">
-              <Button
-                className="w-full h-12 bg-indigo-600 hover:bg-indigo-700 text-white font-medium"
-                asChild
-              >
+
+              {/* Email */}
+              <Button className="w-full h-12 bg-indigo-600 hover:bg-indigo-700 text-white" asChild>
                 <a href="mailto:tomi@speaktoday.com.ar" className="flex items-center justify-center gap-2">
                   <Mail size={20} />
                   Enviar email
                 </a>
               </Button>
 
-              <Button
-                variant="outline"
-                className="w-full h-12 border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50"
-                asChild
-              >
+              {/* WhatsApp 1:1 */}
+              <Button className="w-full h-12 bg-green-600 hover:bg-green-700 text-white" asChild>
                 <a
-                  href="https://instagram.com/tu_usuario_instagram"
+                  href="https://wa.me/5493462338306?text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%201:1%20con%20el%20Prof.%20Tom%C3%A1s%20Carreras."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <MessageCircle size={20} />
+                  Clases 1-1
+                </a>
+              </Button>
+
+              {/* Instagram */}
+              <Button variant="outline" className="w-full h-12 border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50" asChild>
+                <a
+                  href="https://instagram.com/tomicarreras"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
@@ -67,13 +74,10 @@ export default function TomiProfile() {
                 </a>
               </Button>
 
-              <Button
-                variant="outline"
-                className="w-full h-12 border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
-                asChild
-              >
+              {/* GitHub */}
+              <Button variant="outline" className="w-full h-12 border-2 border-gray-800 text-gray-800 hover:bg-gray-50" asChild>
                 <a
-                  href="https://github.com/tu_usuario_github"
+                  href="https://github.com/ltdtomi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
@@ -82,12 +86,26 @@ export default function TomiProfile() {
                   GitHub
                 </a>
               </Button>
+
+              {/* Discord */}
+              <Button variant="outline" className="w-full h-12 border-2 border-purple-600 text-purple-600 hover:bg-purple-50" asChild>
+                <a
+                  href="https://discord.gg/JYPQMuU3gE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <MessageSquare size={20} />
+                  Unite al Discord
+                </a>
+              </Button>
+
             </div>
 
-            {/* Botón para volver a la web principal */}
-            <Link href="/" className="text-indigo-600 hover:text-indigo-700 text-sm mt-4">
-              ← Volver a Speak Today
+            <Link href="/" className="text-indigo-600 hover:text-indigo-700 text-sm">
+              ← Volver a SpeakToday
             </Link>
+
           </div>
         </Card>
       </div>
