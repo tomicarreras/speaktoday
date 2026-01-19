@@ -57,7 +57,7 @@ export default function TomiProfile() {
                   className="flex items-center justify-center gap-2"
                 >
                   <MessageCircle size={20} />
-                  Clases 1-1
+                  Clases 1:1
                 </a>
               </Button>
 
@@ -74,31 +74,27 @@ export default function TomiProfile() {
                 </a>
               </Button>
 
-              {/* GitHub */}
-              <Button variant="outline" className="w-full h-12 border-2 border-gray-800 text-gray-800 hover:bg-gray-50" asChild>
-                <a
-                  href="https://github.com/ltdtomi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <Github size={20} />
-                  GitHub
-                </a>
-              </Button>
-
               {/* Discord */}
-              <Button variant="outline" className="w-full h-12 border-2 border-purple-600 text-purple-600 hover:bg-purple-50" asChild>
-                <a
-                  href="https://discord.gg/JYPQMuU3gE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <MessageSquare size={20} />
-                  Unite al Discord
-                </a>
-              </Button>
+              <Button
+  variant="outline"
+  className="w-full h-12 border-2 border-[#5865F2] text-[#5865F2] hover:bg-[#5865F2]/10"
+  asChild
+>
+  <a
+    href="https://discord.gg/JYPQMuU3gE"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-2"
+  >
+    <img
+      src="/public/discord.svg"
+      alt="Discord"
+      className="w-5 h-5"
+    />
+    Unite al Discord
+  </a>
+</Button>
+
 
             </div>
 
